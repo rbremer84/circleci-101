@@ -1,13 +1,13 @@
 version: 2
 jobs:
-  build:
+  one:
     docker: # See https://docs.docker.com/get-started/#docker-concepts if you are new to Docker.
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
       - run: echo "A first hello"
       - run: sleep 25
-  build:
+  two:
     docker: # See https://docs.docker.com/get-started/#docker-concepts if you are new to Docker.
       - image: circleci/ruby:2.4.1
     steps:
